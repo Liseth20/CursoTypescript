@@ -67,3 +67,17 @@ console.log(superman);
 console.log(ironman);
 
 //tipo de Funcion
+function sumar (a:number, b:number):number{
+  return a+b;
+}
+function saludar(nombre:string):string {
+  retunr "I'm " + nombre;
+}
+
+let miFuncion : (x:number, y:number)=>number;
+
+miFuncion=sumar
+console.log(miFuncion(5,5));
+
+miFuncion=saludar
+console.log(miFuncion("Batman"));
