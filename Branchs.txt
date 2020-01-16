@@ -10,3 +10,4 @@ crear un merge
 Devolverlo a master
 git checkout master
 git merge rama_modificad
+git clone https://github.com/Liseth20/CursoTypescript.git -b Modulos --single-branch
