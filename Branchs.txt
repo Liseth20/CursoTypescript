@@ -1,0 +1,12 @@
+git branch nombre_rama
+git status
+git -m nombre_rama nuevo_nombre
+git branch -d nombre_rama (eliminar)
+git checkout -b rama_nueva (crear y cambiar a esa rama)
+git checkout rama (cambiar a esa rama)
+
+
+crear un merge
+Devolverlo a master
+git checkout master
+git merge rama_modificad
