@@ -82,3 +82,6 @@ able en otra para un fin determinado
 let cualquierValor:any = "Cualquier cosa";
 let largoDelString:number = (<string>cualquierValor).length;
 console.log(largoDelString);
+
+//constante
+const nombre = "Liseth";
