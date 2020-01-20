@@ -61,7 +61,20 @@ console.log(audio);
 //never lineas de codigo que nunca deben suceder
 //function error(mensaje):never { throw new Error(mensaje);}
 //error("Error critico");
-//Aserciones de tipo, transformar una variable en otra para un fin determinado
+//Aserciones de tipo, transformar una vari
+able;
+en;
+otra;
+para;
+un;
+fin;
+determinado;
 var cualquierValor = "Cualquier cosa";
 var largoDelString = cualquierValor.length;
 console.log(largoDelString);
+//constante
+var nombre = "Liseth";
+//templates literales otra forma de string
+var name = "Bruce";
+var menssage = "1.esta es una linea\n2. Hola " + name + "\n3. " + (5 + 7);
+console.log(menssage);

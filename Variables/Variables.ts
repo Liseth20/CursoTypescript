@@ -82,3 +82,14 @@ able en otra para un fin determinado
 let cualquierValor:any = "Cualquier cosa";
 let largoDelString:number = (<string>cualquierValor).length;
 console.log(largoDelString);
+
+//constante
+const nombre = "Liseth";
+
+//templates literales otra forma de string
+let name:string="Bruce"
+let menssage:string = `1.esta es una linea
+2. Hola ${name}
+3. ${5+7}`;
+
+console.log(menssage);

@@ -67,3 +67,28 @@ console.log(superman);
 console.log(ironman);
 
 //tipo de Funcion
+function sumar (a:number, b:number):number{
+  return a+b;
+}
+function saludar(nombre:string):string {
+  return "I'm " + nombre;
+}
+
+let miFunction : (x:number, y:number)=>number;
+
+miFunction=sumar
+console.log(miFunction(5,5));
+
+miFunction=saludar
+console.log(miFunction("Batman"));
+
+/*Funciones con flecha gorda, si hay muchas funciones una dentro de otra, puede haber errores en las variables, que
+no sean identificadas, entonces con la flecha gorda nos evitamos meter nuestros nuevos datos entre llaves y aislandolo*/
+let capitan_america = {
+ hulk: "Hulk",
+ dar0rden_hulk:function(){
+   setTimeout(()=>console.log(this.hulk +  "smash"),1000)
+ }
+};
+
+capitan_america.dar0rden_hulk();

@@ -53,3 +53,15 @@ var ironman = nombreCompletito("Antony", "Edward", "Tony", "Stark");
 console.log(superman);
 console.log(ironman);
 //tipo de Funcion
+function sumar(a, b) {
+    return a + b;
+}
+function saludar(nombre) {
+    retunr;
+    "I'm " + nombre;
+}
+var miFuncion;
+miFuncion = sumar;
+console.log(miFuncion(5, 5));
+miFuncion = saludar;
+console.log(miFuncion("Batman"));
