@@ -53,3 +53,15 @@ console.log("Cosa es un string");
 else{
   console.log("Este codigo indica que no es un string")
 }
+
+//Deestructuracion de Objetos
+let avengers = {
+  nick: "Samuel",
+  ironman: "Robert",
+  vision: "Paul"
+};
+
+//esto sirve para poder usar las variables dentro del objeto sin usar tanto codigo
+
+let {nick, ironman, vision} = avengers;
+console.log(nick);

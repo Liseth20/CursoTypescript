@@ -60,6 +60,11 @@ let arreglo:number[] = [1,2,3,4,5,6,7];
 let villanos2:string[]= ["Omega rojo","duende verde"];
 console.log(villanos2[0]);
 
+// destructurar un Array, asi obtenemos un dato especidifco en el array
+let heroesMarvel = ["Samuel","Robert","Paul"];
+let [ ,avenger2]= heroesMarvel;
+console.log(avenger2);
+
 //tuplas
 let tupla:[number, string] = [341, "hola"];
 
@@ -93,3 +98,39 @@ let menssage:string = `1.esta es una linea
 3. ${5+7}`;
 
 console.log(menssage);
+
+// ciclo For
+let viudaNegra={
+  nombre: "Viuda Negra",
+  arma: "Pistolas",
+};
+
+let brujaEscarlata={
+  nombre:"Bruja Escarlata",
+  arma:"Magia"
+};
+
+let capi={
+  nombre:"Capitan America",
+  arma:"Escudo"
+};
+
+let vengadores= [viudaNegra, brujaEscarlata, capi];
+
+//For of
+for (let vengador of vengadores){
+  console.log(vengador.nombre, vengador.arma);
+}
+
+/*
+//For in recorre todo el array
+for (let i in vengadores){
+  let vengador =vengadores[i];
+  console.log(vengador.nombre, vengador.arma);
+}
+
+//Forma tradicional
+for (let i = 0; vengadores.length - 1; i++){
+
+}
+*/
