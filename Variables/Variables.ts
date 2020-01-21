@@ -82,8 +82,7 @@ console.log(audio);
 //function error(mensaje):never { throw new Error(mensaje);}
 //error("Error critico");
 
-//Aserciones de tipo, transformar una vari
-able en otra para un fin determinado
+//Aserciones de tipo, transformar una variable en otra para un fin determinado
 let cualquierValor:any = "Cualquier cosa";
 let largoDelString:number = (<string>cualquierValor).length;
 console.log(largoDelString);
