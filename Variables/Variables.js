@@ -47,6 +47,10 @@ console.log(variable);
 var arreglo = [1, 2, 3, 4, 5, 6, 7];
 var villanos2 = ["Omega rojo", "duende verde"];
 console.log(villanos2[0]);
+// destructurar un Array, asi obtenemos un dato especidifco en el array
+var heroesMarvel = ["Samuel", "Robert", "Paul"];
+var avenger2 = heroesMarvel[1];
+console.log(avenger2);
 //tuplas
 var tupla = [341, "hola"];
 //Emun
@@ -61,14 +65,7 @@ console.log(audio);
 //never lineas de codigo que nunca deben suceder
 //function error(mensaje):never { throw new Error(mensaje);}
 //error("Error critico");
-//Aserciones de tipo, transformar una vari
-able;
-en;
-otra;
-para;
-un;
-fin;
-determinado;
+//Aserciones de tipo, transformar una variable en otra para un fin determinado
 var cualquierValor = "Cualquier cosa";
 var largoDelString = cualquierValor.length;
 console.log(largoDelString);
@@ -78,3 +75,34 @@ var nombre = "Liseth";
 var name = "Bruce";
 var menssage = "1.esta es una linea\n2. Hola " + name + "\n3. " + (5 + 7);
 console.log(menssage);
+// ciclo For
+var viudaNegra = {
+    nombre: "Viuda Negra",
+    arma: "Pistolas",
+};
+var brujaEscarlata = {
+    nombre: "Bruja Escarlata",
+    arma: "Magia"
+};
+var capi = {
+    nombre: "Capitan America",
+    arma: "Escudo"
+};
+var vengadores = [viudaNegra, brujaEscarlata, capi];
+//For of
+for (var _i = 0, vengadores_1 = vengadores; _i < vengadores_1.length; _i++) {
+    var vengador = vengadores_1[_i];
+    console.log(vengador.nombre, vengador.arma);
+}
+/*
+//For in recorre todo el array
+for (let i in vengadores){
+  let vengador =vengadores[i];
+  console.log(vengador.nombre, vengador.arma);
+}
+
+//Forma tradicional
+for (let i = 0; vengadores.length - 1; i++){
+
+}
+*/

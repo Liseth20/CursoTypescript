@@ -41,3 +41,12 @@ if (typeof cosa === "string") {
 else {
     console.log("Este codigo indica que no es un string");
 }
+//Deestructuracion de Objetos
+var avengers = {
+    nick: "Samuel",
+    ironman: "Robert",
+    vision: "Paul"
+};
+//esto sirve para poder usar las variables dentro del objeto sin usar tanto codigo
+var nick = avengers.nick, ironman = avengers.ironman, vision = avengers.vision;
+console.log(nick);

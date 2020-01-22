@@ -57,11 +57,21 @@ function sumar(a, b) {
     return a + b;
 }
 function saludar(nombre) {
-    retunr;
-    "I'm " + nombre;
+    return "I'm " + nombre;
 }
-var miFuncion;
-miFuncion = sumar;
-console.log(miFuncion(5, 5));
-miFuncion = saludar;
-console.log(miFuncion("Batman"));
+var miFunction;
+miFunction = sumar;
+console.log(miFunction(5, 5));
+miFunction = saludar;
+console.log(miFunction("Batman"));
+/*Funciones con flecha gorda, si hay muchas funciones una dentro de otra, puede haber errores en las variables, que
+no sean identificadas, entonces con la flecha gorda nos evitamos meter nuestros nuevos datos entre llaves y aislandolo*/
+var capitan_america = {
+    hulk: "Hulk",
+    dar0rden_hulk: function () {
+        var _this = this;
+        setTimeout(function () { return console.log(_this.hulk + "smash"); }, 1000);
+    }
+};
+capitan_america.dar0rden_hulk();
+//
